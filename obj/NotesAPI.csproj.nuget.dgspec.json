@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Corvy\\Proyect\\WIP\\NotesAPI\\NotesAPI\\NotesAPI.csproj": {}
+    "D:\\Corvy\\Proyect\\WIP\\NotesAPI\\NotesAPI.csproj": {}
   },
   "projects": {
-    "D:\\Corvy\\Proyect\\WIP\\NotesAPI\\NotesAPI\\NotesAPI.csproj": {
+    "D:\\Corvy\\Proyect\\WIP\\NotesAPI\\NotesAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Corvy\\Proyect\\WIP\\NotesAPI\\NotesAPI\\NotesAPI.csproj",
+        "projectUniqueName": "D:\\Corvy\\Proyect\\WIP\\NotesAPI\\NotesAPI.csproj",
         "projectName": "NotesAPI",
-        "projectPath": "D:\\Corvy\\Proyect\\WIP\\NotesAPI\\NotesAPI\\NotesAPI.csproj",
+        "projectPath": "D:\\Corvy\\Proyect\\WIP\\NotesAPI\\NotesAPI.csproj",
         "packagesPath": "C:\\Users\\usuario\\.nuget\\packages\\",
-        "outputPath": "D:\\Corvy\\Proyect\\WIP\\NotesAPI\\NotesAPI\\obj\\",
+        "outputPath": "D:\\Corvy\\Proyect\\WIP\\NotesAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -53,6 +53,32 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[8.0.6, )"
+            },
+            "Microsoft.CodeAnalysis.Analyzers": {
+              "target": "Package",
+              "version": "[3.3.4, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.4, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
