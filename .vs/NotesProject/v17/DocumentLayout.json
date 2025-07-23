@@ -1,0 +1,265 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Corvy\\Proyect\\WIP\\NotesProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Corvy\\Proyect\\WIP\\NotesProject\\backend\\Properties\\launchSettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Properties\\launchSettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Corvy\\Proyect\\WIP\\NotesProject\\backend\\controllers\\UsersController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\controllers\\UsersController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Corvy\\Proyect\\WIP\\NotesProject\\backend\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Corvy\\Proyect\\WIP\\NotesProject\\backend\\controllers\\AuthController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\controllers\\AuthController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Corvy\\Proyect\\WIP\\NotesProject\\backend\\controllers\\NotesController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\controllers\\NotesController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Corvy\\Proyect\\WIP\\NotesProject\\backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Corvy\\Proyect\\WIP\\NotesProject\\backend\\DTOs\\Auth\\UserProfileDTO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\DTOs\\Auth\\UserProfileDTO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Corvy\\Proyect\\WIP\\NotesProject\\backend\\Helpers\\ExceptionMiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Helpers\\ExceptionMiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Corvy\\Proyect\\WIP\\NotesProject\\backend\\Helpers\\NoBadWords.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Helpers\\NoBadWords.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Corvy\\Proyect\\WIP\\NotesProject\\backend\\Helpers\\ValidateModelAttribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Helpers\\ValidateModelAttribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Corvy\\Proyect\\WIP\\NotesProject\\backend\\models\\DbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\models\\DbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Corvy\\Proyect\\WIP\\NotesProject\\backend\\models\\Note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\models\\Note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Corvy\\Proyect\\WIP\\NotesProject\\backend\\models\\User.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\models\\User.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Corvy\\Proyect\\WIP\\NotesProject\\backend\\DTOs\\Auth\\RegisterDTO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\DTOs\\Auth\\RegisterDTO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Corvy\\Proyect\\WIP\\NotesProject\\backend\\DTOs\\Auth\\LoginDTO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\DTOs\\Auth\\LoginDTO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Corvy\\Proyect\\WIP\\NotesProject\\backend\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "backend\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\Corvy\\Proyect\\WIP\\NotesProject\\backend\\Properties\\launchSettings.json",
+              "RelativeToolTip": "backend\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-31T05:13:09.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NotesController.cs",
+              "DocumentMoniker": "D:\\Corvy\\Proyect\\WIP\\NotesProject\\backend\\controllers\\NotesController.cs",
+              "RelativeDocumentMoniker": "backend\\controllers\\NotesController.cs",
+              "ToolTip": "D:\\Corvy\\Proyect\\WIP\\NotesProject\\backend\\controllers\\NotesController.cs",
+              "RelativeToolTip": "backend\\controllers\\NotesController.cs",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAAABcAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T05:46:21.305Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "D:\\Corvy\\Proyect\\WIP\\NotesProject\\backend\\controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "backend\\controllers\\UsersController.cs",
+              "ToolTip": "D:\\Corvy\\Proyect\\WIP\\NotesProject\\backend\\controllers\\UsersController.cs",
+              "RelativeToolTip": "backend\\controllers\\UsersController.cs",
+              "ViewState": "AQIAAGMAAAAAAAAAAAAAADIAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T05:46:20.063Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Corvy\\Proyect\\WIP\\NotesProject\\backend\\Program.cs",
+              "RelativeDocumentMoniker": "backend\\Program.cs",
+              "ToolTip": "D:\\Corvy\\Proyect\\WIP\\NotesProject\\backend\\Program.cs",
+              "RelativeToolTip": "backend\\Program.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAAAEgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T03:41:24.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\Corvy\\Proyect\\WIP\\NotesProject\\backend\\controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "backend\\controllers\\AuthController.cs",
+              "ToolTip": "D:\\Corvy\\Proyect\\WIP\\NotesProject\\backend\\controllers\\AuthController.cs",
+              "RelativeToolTip": "backend\\controllers\\AuthController.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAADEAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T05:48:59.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Corvy\\Proyect\\WIP\\NotesProject\\backend\\appsettings.json",
+              "RelativeDocumentMoniker": "backend\\appsettings.json",
+              "ToolTip": "D:\\Corvy\\Proyect\\WIP\\NotesProject\\backend\\appsettings.json",
+              "RelativeToolTip": "backend\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-26T05:50:58.254Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ValidateModelAttribute.cs",
+              "DocumentMoniker": "D:\\Corvy\\Proyect\\WIP\\NotesProject\\backend\\Helpers\\ValidateModelAttribute.cs",
+              "RelativeDocumentMoniker": "backend\\Helpers\\ValidateModelAttribute.cs",
+              "ToolTip": "D:\\Corvy\\Proyect\\WIP\\NotesProject\\backend\\Helpers\\ValidateModelAttribute.cs",
+              "RelativeToolTip": "backend\\Helpers\\ValidateModelAttribute.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T05:45:41.735Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "NoBadWords.cs",
+              "DocumentMoniker": "D:\\Corvy\\Proyect\\WIP\\NotesProject\\backend\\Helpers\\NoBadWords.cs",
+              "RelativeDocumentMoniker": "backend\\Helpers\\NoBadWords.cs",
+              "ToolTip": "D:\\Corvy\\Proyect\\WIP\\NotesProject\\backend\\Helpers\\NoBadWords.cs",
+              "RelativeToolTip": "backend\\Helpers\\NoBadWords.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T05:45:43.382Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ExceptionMiddleware.cs",
+              "DocumentMoniker": "D:\\Corvy\\Proyect\\WIP\\NotesProject\\backend\\Helpers\\ExceptionMiddleware.cs",
+              "RelativeDocumentMoniker": "backend\\Helpers\\ExceptionMiddleware.cs",
+              "ToolTip": "D:\\Corvy\\Proyect\\WIP\\NotesProject\\backend\\Helpers\\ExceptionMiddleware.cs",
+              "RelativeToolTip": "backend\\Helpers\\ExceptionMiddleware.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T05:45:44.572Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserProfileDTO.cs",
+              "DocumentMoniker": "D:\\Corvy\\Proyect\\WIP\\NotesProject\\backend\\DTOs\\Auth\\UserProfileDTO.cs",
+              "RelativeDocumentMoniker": "backend\\DTOs\\Auth\\UserProfileDTO.cs",
+              "ToolTip": "D:\\Corvy\\Proyect\\WIP\\NotesProject\\backend\\DTOs\\Auth\\UserProfileDTO.cs",
+              "RelativeToolTip": "backend\\DTOs\\Auth\\UserProfileDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T05:42:18.917Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DbContext.cs",
+              "DocumentMoniker": "D:\\Corvy\\Proyect\\WIP\\NotesProject\\backend\\models\\DbContext.cs",
+              "RelativeDocumentMoniker": "backend\\models\\DbContext.cs",
+              "ToolTip": "D:\\Corvy\\Proyect\\WIP\\NotesProject\\backend\\models\\DbContext.cs",
+              "RelativeToolTip": "backend\\models\\DbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T05:45:28.535Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Note.cs",
+              "DocumentMoniker": "D:\\Corvy\\Proyect\\WIP\\NotesProject\\backend\\models\\Note.cs",
+              "RelativeDocumentMoniker": "backend\\models\\Note.cs",
+              "ToolTip": "D:\\Corvy\\Proyect\\WIP\\NotesProject\\backend\\models\\Note.cs",
+              "RelativeToolTip": "backend\\models\\Note.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T05:45:24.935Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Corvy\\Proyect\\WIP\\NotesProject\\backend\\models\\User.cs",
+              "RelativeDocumentMoniker": "backend\\models\\User.cs",
+              "ToolTip": "D:\\Corvy\\Proyect\\WIP\\NotesProject\\backend\\models\\User.cs",
+              "RelativeToolTip": "backend\\models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T05:45:27.311Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RegisterDTO.cs",
+              "DocumentMoniker": "D:\\Corvy\\Proyect\\WIP\\NotesProject\\backend\\DTOs\\Auth\\RegisterDTO.cs",
+              "RelativeDocumentMoniker": "backend\\DTOs\\Auth\\RegisterDTO.cs",
+              "ToolTip": "D:\\Corvy\\Proyect\\WIP\\NotesProject\\backend\\DTOs\\Auth\\RegisterDTO.cs",
+              "RelativeToolTip": "backend\\DTOs\\Auth\\RegisterDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T05:42:14.57Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "LoginDTO.cs",
+              "DocumentMoniker": "D:\\Corvy\\Proyect\\WIP\\NotesProject\\backend\\DTOs\\Auth\\LoginDTO.cs",
+              "RelativeDocumentMoniker": "backend\\DTOs\\Auth\\LoginDTO.cs",
+              "ToolTip": "D:\\Corvy\\Proyect\\WIP\\NotesProject\\backend\\DTOs\\Auth\\LoginDTO.cs",
+              "RelativeToolTip": "backend\\DTOs\\Auth\\LoginDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T05:42:06.132Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
