@@ -3,6 +3,7 @@ import { getNotes, deleteNote, updateNote} from "../services/noteService";
 import type { Note } from "../services/noteService";
 import { useNavigate } from "react-router-dom";
 import { logout } from "../services/auth";
+import CreateNoteForm from "./CreateNoteForm";
 
 interface NotesListProps{
   refreshTrigger?: boolean;
@@ -25,21 +26,9 @@ const NotesList: React.FC<NotesListProps> = ({refreshTrigger}) => {
     const [editedContent, setEditedContent] = useState("");
     const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
+    const [showCreateForm, setShowCreateForm] = useState(false);
+    const [deleteMessage, setDeleteMessage] = useState<string | null>(null);
 
-
-    useEffect(() => {
-        const fetchNotes = async () => {
-          try{
-            const notes = await getNotes();
-            setNotes(notes);
-          }catch(error){
-            console.error("Error al obtener Notas ", error);
-            alert("Error al Cargar Notas");
-          }
-        };
-
-        fetchNotes();
-    }, [refreshTrigger]);
 
     useEffect(() => {
       const getAllNotes = async () => {
@@ -47,16 +36,24 @@ const NotesList: React.FC<NotesListProps> = ({refreshTrigger}) => {
           setIsLoading(true);
           setError(null);
           const data = await getNotes();
-          setNotes(data);
+          
+          if(Array.isArray(data)) {
+            setNotes(data);
+          } else {
+            console.error("Respuesta no es Array:", data);
+            setNotes([]);
+            setError("Error Formato de Datos");
+          }
         }catch (error){
           console.error("Error al cargar Notas", error);
-          alert("Error al cargar Notas");
+          setNotes([]);
+          setError("Error al cargar Notas");
         } finally{
           setIsLoading(false);
         }
       };
       getAllNotes();
-    }, []);
+    }, [refreshTrigger]);
 
     if (isLoading){
       return <p className="text-center text-gray-500 mt-4 break-words">Cargando Notas...</p>;
@@ -69,8 +66,12 @@ const NotesList: React.FC<NotesListProps> = ({refreshTrigger}) => {
       try{
         await deleteNote(id);
         setNotes((prevNotes) => prevNotes.filter((note) => note.id !== id));
+
+        setDeleteMessage("Nota Eliminada Exitosamente");
+        setTimeout(() => setDeleteMessage(null), 3000);
       }catch(error){
-        alert("Error al Eliminar Nota");
+        setDeleteMessage("Error al Eliminar Nota");
+        setTimeout(() => setDeleteMessage(null), 3000);
         console.error(error);
       }
     };
@@ -101,6 +102,11 @@ const NotesList: React.FC<NotesListProps> = ({refreshTrigger}) => {
       }
     };
 
+    const handleNoteCreated = (newNote: Note) => {
+      setNotes(prevNotes => [...prevNotes, newNote]);
+      setShowCreateForm(false);
+    };
+
     const handleLogout = () => {
       logout();
       localStorage.removeItem("token");
@@ -109,78 +115,129 @@ const NotesList: React.FC<NotesListProps> = ({refreshTrigger}) => {
     };
 
     return (
-    <div className="p-4 max-w-2xl mx-auto space-y-4">
-      <div className="flex justify-between items-center">
-      <h2 className="flex text-xl font-semibold text-white">Notas</h2>
-      <button
-        onClick={handleLogout}
-        className="ml-auto text-sm text-white bg-red-600 hover:underline block mb-2 px-2 py-1 rounded"
-      >
-        Cerrar sesión
-      </button>
-      </div>
-      {error && (
-          <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-2 rounded mb-4">
-          {error}
+  <div className="min-h-screen bg-gray-900 py-6">
+    <div className="max-w-4xl mx-auto px-4">
+      <header className="mb-6">
+        {deleteMessage && (
+          <div className="mb-4">
+            <div className="bg-green-600 text-white px-4 py-2 rounded">
+              {deleteMessage}
+            </div>
           </div>
         )}
-      {notes.length === 0 ? (
-        <p>No Hay Notas Disponibles</p>
-      ) : (
-        notes.map((note) => (
-          <div key={note.id} className="text-white dark:bg-purple-900 p-4 rounded shadow-md">
-            {editingNoteId === note.id ? (
-              <>
-                <input
-                  className="block w-full mb-2 border px-2 py-1"
-                  value={editedTitle}
-                  onChange={(e) => setEditedTitle(e.target.value)}
-                />
-                <textarea
-                  className="block w-full mb-2 border px-2 py-1"
-                  value={editedContent}
-                  onChange={(e) => setEditedContent(e.target.value)}
-                />
-                <div className="space-x-2">
-                  <button
-                    className="text-sm text-green-600 hover:underline"
-                    onClick={() => saveChanges(note.id)}
-                  >
-                    Guardar
-                  </button>
-                  <button
-                    className="text-sm text-gray-600 hover:underline"
-                    onClick={cancelEditing}
-                  >
-                    Cancelar
-                  </button>
-                </div>
-              </>
-            ) : (
-              <>
-                <h3 className="text-lg font-bold">{note.title}</h3>
-                <p>{note.content}</p>
-                <div className="flex gap-2 mt-2 space-x-2">
-                  <button
-                    className="text-sm bg-green-500 hover:underline px-2 py-1 rounded"
-                    onClick={() => startEditing(note)}
-                  >
-                    Editar
-                  </button>
-                  <button
-                    className="text-sm bg-red-600 hover:underline px-2 py-1 rounded"
-                    onClick={() => handleDelete(note.id)}
-                  >
-                    Eliminar
-                  </button>
-                </div>
-              </>
-            )}
+        <div className="flex justify-between items-center">
+          <h1 className="text-2xl font-bold text-white">Mis Notas</h1>
+          <div className="flex gap-2">
+            <button 
+              onClick={() => setShowCreateForm(true)}
+              className="bg-green-600 hover:bg-green-700 text-white px-3 py-2 rounded"
+            >
+              Nueva Nota
+            </button>
+            <button 
+              onClick={handleLogout}
+              className="bg-red-600 hover:bg-red-700 text-white px-3 py-2 rounded"
+            >
+              Salir
+            </button>
           </div>
-        ))
+        </div>
+      </header>
+      {error && (
+        <div className="mb-4">
+          <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-2 rounded">
+            {error}
+          </div>
+        </div>
       )}
+      {showCreateForm && (
+        <section className="mb-6">
+          <CreateNoteForm
+            onNoteCreated={handleNoteCreated}
+            onCancel={() => setShowCreateForm(false)}
+          />
+        </section>
+      )}
+      <main>
+        {notes.length === 0 ? (
+          <div className="text-center py-12">
+            <div className="text-6xl mb-4"></div>
+            <h3 className="text-xl font-medium text-gray-300 mb-2">
+              No Tienes Notas Todavía
+            </h3>
+            <p className="text-gray-400 mb-4">
+              Comienza Creando tu Primera Nota
+            </p>
+            <button 
+              onClick={() => setShowCreateForm(true)}
+              className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-lg"
+            >
+              Crear mi Primera Nota
+            </button>
+          </div>
+        ) : (
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            {notes.map((note) => (
+              <div 
+                key={note.id} 
+                className="bg-gray-800 p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              >
+                {editingNoteId === note.id ? (
+                  <div className="space-y-3">
+                    <input
+                      className="w-full px-3 py-2 bg-gray-700 text-white rounded"
+                      value={editedTitle}
+                      onChange={(e) => setEditedTitle(e.target.value)}
+                    />
+                    <textarea
+                      className="w-full px-3 py-2 bg-gray-700 text-white rounded"
+                      value={editedContent}
+                      onChange={(e) => setEditedContent(e.target.value)}
+                    />
+                    <div className="flex gap-2">
+                      <button
+                        className="bg-green-600 hover:bg-green-700 text-white px-3 py-1 rounded text-sm"
+                        onClick={() => saveChanges(note.id)}
+                      >
+                        Guardar
+                      </button>
+                      <button
+                        className="bg-gray-600 hover:bg-gray-700 text-white px-3 py-1 rounded text-sm"
+                        onClick={cancelEditing}
+                      >
+                        Cancelar
+                      </button>
+                    </div>
+                  </div>
+                ) : (
+                  <div>
+                    <h3 className="text-lg font-bold text-white mb-2">{note.title}</h3>
+                    <p className="text-gray-300 mb-4">{note.content}</p>
+                    <div className="flex gap-2">
+                      <button
+                        className="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1 rounded text-sm"
+                        onClick={() => startEditing(note)}
+                      >
+                        Editar
+                      </button>
+                      <button
+                        className="bg-red-600 hover:bg-red-700 text-white px-3 py-1 rounded text-sm"
+                        onClick={() => handleDelete(note.id)}
+                      >
+                        Eliminar
+                      </button>
+                    </div>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        )}
+      </main>
+
     </div>
-  );
+  </div>
+);
 };
 
 export default NotesList;

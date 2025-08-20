@@ -1,6 +1,5 @@
 import { Request, Response } from "express";
 import { createNoteService, deleteNoteService, getNotesService, updateNoteService} from "../services/notes.service";
-import { error } from "console";
 
 
 export const createNote = async (req: Request, res: Response): Promise<void> => {

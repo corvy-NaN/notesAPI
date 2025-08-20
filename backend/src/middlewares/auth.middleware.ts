@@ -29,8 +29,6 @@ export const verifyToken = (req: Request, res: Response, next: NextFunction): vo
         const decoded = jwt.verify(token, SECRET_KEY) as any;
         req.user = decoded;
 
-        console.log("Usuario Autenticado:", decoded.id);
-
         next();
     } catch(err){
         console.error("Error de Verificacion de Token;", err);
